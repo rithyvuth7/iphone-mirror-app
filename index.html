@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>iPhone Mirroring System</title>
+</head>
+
+<body style="font-family: Arial; text-align: center; margin-top: 40px;">
+
+  <h1>📱 iPhone Mirroring System</h1>
+
+  <h2 id="status">🔴 Stopped</h2>
+
+  <input id="deviceName" placeholder="Enter device name" style="padding:8px; width:250px;" />
+  <br><br>
+
+  <button onclick="startMirror()" style="padding:10px 20px; font-size:16px;">Start</button>
+  <button onclick="stopMirror()" style="padding:10px 20px; font-size:16px;">Stop</button>
+
+  <h3>Logs</h3>
+  <pre id="log" style="text-align:left; width:80%; margin:auto; height:250px; overflow:auto; background:#111; color:#0f0; padding:10px;"></pre>
+
+  <script src="renderer.js"></script>
+
+</body>
+</html>
