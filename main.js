@@ -24,7 +24,7 @@ ipcMain.on("start-mirror", (_, deviceName) => {
 
   const exePath = path.join(__dirname, "uxplay.exe");
 
-  uxplay = spawn(exePath, ["-n", deviceName || "My iPhone Mirror", "-fps", "60", "-s", "1920x1080"], {
+  uxplay = spawn(exePath, ["-n", deviceName || "My iPhone Mirror", "-fps", "60", "-s", "3840 x 2160"], {
     cwd: __dirname,
     env: {
       ...process.env,
